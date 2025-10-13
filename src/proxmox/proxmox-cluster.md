@@ -22,6 +22,7 @@ pass: admin
 |ryuu|200|iriguchi|nginx|DO NOT SHUT DOWN THIS VM|
 |ryuu|201|morata|arch-linux-mirror|DO NOT SHUT DOWN THIS VM|
 |ryuu|202|sesshoku|subnet-router|DO NOT SHUT DOWN THIS VM|
+|tora|203|teikyo|minecraft-java-server|Private usage|
 |acheron-pve|1000|hitori|kubernetes-control-plane|Testing phase|
 |acheron-pve|1001|futari|kubernetes-worker|Testing phase|
 |acheron-pve|1002|hikari|kubernetes-worker|Testing phase|
@@ -33,6 +34,9 @@ pass: admin
 |kitsune|2005|tsutsuji|atr-backend|Production|
 |kitsune|2006|nanohana|atr-backend|Staging|
 |kitsune|2007|kinmokusei|atr-backend|Staging|
+|kitsune|3000|terraform-0|atr-backend_terraform|Testing phase|
+|kitsune|3001|terraform-1|atr-backend_terraform|Testing phase|
+|kitsune|3002|terraform-2|atr-backend_terraform|Testing phase|
 
 ## Templates
 
