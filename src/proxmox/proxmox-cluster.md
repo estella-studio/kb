@@ -1,4 +1,4 @@
-# README
+# Proxmox Cluster (emu)
 
 Environment is currently on production
 
@@ -17,15 +17,15 @@ pass: admin
 
 >> Do not shut down any VM with `no-shutdown` tag. Doing so may affect the integrity of the cluster and access to the web interface might not be possible. If you really need to do so, please consult with the system administrator via email to <syafa@syafahadyan.com>
 
-|Node|VMID|Name|Role|Note|
+|Node|VMID|Name|Role|Environment|
 |:---|:---|:---|:---|:---|
-|ryuu|200|iriguchi|nginx|DO NOT SHUT DOWN THIS VM|
-|ryuu|201|morata|arch-linux-mirror|DO NOT SHUT DOWN THIS VM|
-|ryuu|202|sesshoku|subnet-router|DO NOT SHUT DOWN THIS VM|
-|tora|203|teikyo|minecraft-java-server|Private usage|
-|acheron-pve|1000|hitori|kubernetes-control-plane|Testing phase|
-|acheron-pve|1001|futari|kubernetes-worker|Testing phase|
-|acheron-pve|1002|hikari|kubernetes-worker|Testing phase|
+|ryuu|200|iriguchi|nginx|Production|
+|ryuu|201|morata|arch-linux-mirror|Production|
+|ryuu|202|sesshoku|subnet-router|Production (internal)|
+|tora|203|teikyo|minecraft-java-server|Production (internal)|
+|kitsune|1000|hitori|kubernetes-control-plane|Testing phase|
+|kitsune|1001|futari|kubernetes-worker|Testing phase|
+|kitsune|1002|hikari|kubernetes-worker|Testing phase|
 |kitsune|2000|tsubaki|atr-backend|Production|
 |kitsune|2001|ajisai|atr-backend|Production|
 |kitsune|2002|suisen|atr-backend|Production|
