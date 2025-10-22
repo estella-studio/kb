@@ -34,9 +34,9 @@ pass: admin
 |kitsune|2005|tsutsuji|atr-backend|Production|
 |kitsune|2006|nanohana|atr-backend|Staging|
 |kitsune|2007|kinmokusei|atr-backend|Staging|
-|kitsune|3000|terraform-0|atr-backend_terraform|Testing phase|
-|kitsune|3001|terraform-1|atr-backend_terraform|Testing phase|
-|kitsune|3002|terraform-2|atr-backend_terraform|Testing phase|
+|kitsune|3000|teto-ichi|atr-backend_terraform|Testing phase|
+|kitsune|3001|teto-ni|atr-backend_terraform|Testing phase|
+|kitsune|3002|teto-san|atr-backend_terraform|Testing phase|
 
 ## Templates
 
