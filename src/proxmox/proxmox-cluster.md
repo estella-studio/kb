@@ -48,11 +48,11 @@ Template Format:
 
 `distro-bios-type`
 
->> Use `acheron-pve_101_debian-uefi` for standard default
+>> Use `kitsune_101_debian-uefi` for standard default
 
-- acheron-pve_100_debian-seabios (***deprecated, do not use this in production environment***)
-- acheron-pve_101_debian-uefi
-- acheron-pve_102_arch-linux-uefi
+- kitsune_100_debian-seabios (***deprecated, do not use this in production environment***)
+- kitsune_101_debian-uefi
+- kitsune_102_arch-linux-uefi
 
 ### Template Creation Guide
 
