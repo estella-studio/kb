@@ -1,4 +1,4 @@
-# Proxmox Cluster (emu)
+# README
 
 Environment is currently on production
 
@@ -17,15 +17,16 @@ pass: admin
 
 >> Do not shut down any VM with `no-shutdown` tag. Doing so may affect the integrity of the cluster and access to the web interface might not be possible. If you really need to do so, please consult with the system administrator via email to <syafa@syafahadyan.com>
 
-|Node|VMID|Name|Role|Environment|
+|Node|VMID|Name|Role|Note|
 |:---|:---|:---|:---|:---|
-|ryuu|200|iriguchi|nginx|Production|
-|ryuu|201|morata|arch-linux-mirror|Production|
-|ryuu|202|sesshoku|subnet-router|Production (internal)|
-|tora|203|teikyo|minecraft-java-server|Production (internal)|
-|kitsune|1000|hitori|kubernetes-control-plane|Testing phase|
-|kitsune|1001|futari|kubernetes-worker|Testing phase|
-|kitsune|1002|hikari|kubernetes-worker|Testing phase|
+|ryuu|200|iriguchi|nginx|DO NOT SHUT DOWN THIS VM|
+|ryuu|201|morata|linux-mirror|DO NOT SHUT DOWN THIS VM|
+|ryuu|202|sesshoku|subnet-router|DO NOT SHUT DOWN THIS VM|
+|tora|203|teikyo|minecraft-java-server|Private usage|
+|ryuu|204|shiten|subnet-router|DO NOT SHUT DOWN THIS VM|
+|acheron-pve|1000|hitori|kubernetes-control-plane|Testing phase|
+|acheron-pve|1001|futari|kubernetes-worker|Testing phase|
+|acheron-pve|1002|hikari|kubernetes-worker|Testing phase|
 |kitsune|2000|tsubaki|atr-backend|Production|
 |kitsune|2001|ajisai|atr-backend|Production|
 |kitsune|2002|suisen|atr-backend|Production|
@@ -34,9 +35,9 @@ pass: admin
 |kitsune|2005|tsutsuji|atr-backend|Production|
 |kitsune|2006|nanohana|atr-backend|Staging|
 |kitsune|2007|kinmokusei|atr-backend|Staging|
-|kitsune|3000|teto-ichi|atr-backend_terraform|Testing phase|
-|kitsune|3001|teto-ni|atr-backend_terraform|Testing phase|
-|kitsune|3002|teto-san|atr-backend_terraform|Testing phase|
+|kitsune|3000|terraform-0|atr-backend_terraform|Testing phase|
+|kitsune|3001|terraform-1|atr-backend_terraform|Testing phase|
+|kitsune|3002|terraform-2|atr-backend_terraform|Testing phase|
 
 ## Templates
 
@@ -48,11 +49,11 @@ Template Format:
 
 `distro-bios-type`
 
->> Use `kitsune_101_debian-uefi` for standard default
+>> Use `acheron-pve_101_debian-uefi` for standard default
 
-- kitsune_100_debian-seabios (***deprecated, do not use this in production environment***)
-- kitsune_101_debian-uefi
-- kitsune_102_arch-linux-uefi
+- acheron-pve_100_debian-seabios (***deprecated, do not use this in production environment***)
+- acheron-pve_101_debian-uefi
+- acheron-pve_102_arch-linux-uefi
 
 ### Template Creation Guide
 
