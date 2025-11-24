@@ -17,27 +17,29 @@ pass: admin
 
 >> Do not shut down any VM with `no-shutdown` tag. Doing so may affect the integrity of the cluster and access to the web interface might not be possible. If you really need to do so, please consult with the system administrator via email to <syafa@syafahadyan.com>
 
-|Node|VMID|Name|Role|Note|
-|:---|:---|:---|:---|:---|
-|ryuu|200|iriguchi|nginx|DO NOT SHUT DOWN THIS VM|
-|ryuu|201|morata|linux-mirror|DO NOT SHUT DOWN THIS VM|
-|ryuu|202|sesshoku|subnet-router|DO NOT SHUT DOWN THIS VM|
-|tora|203|teikyo|minecraft-java-server|Private usage|
-|ryuu|204|shiten|subnet-router|DO NOT SHUT DOWN THIS VM|
-|acheron-pve|1000|hitori|kubernetes-control-plane|Testing phase|
-|acheron-pve|1001|futari|kubernetes-worker|Testing phase|
-|acheron-pve|1002|hikari|kubernetes-worker|Testing phase|
-|kitsune|2000|tsubaki|atr-backend|Production|
-|kitsune|2001|ajisai|atr-backend|Production|
-|kitsune|2002|suisen|atr-backend|Production|
-|kitsune|2003|nadeshiko|atr-backend|Production|
-|kitsune|2004|sumire|atr-backend|Production|
-|kitsune|2005|tsutsuji|atr-backend|Production|
-|kitsune|2006|nanohana|atr-backend|Staging|
-|kitsune|2007|kinmokusei|atr-backend|Staging|
-|kitsune|3000|terraform-0|atr-backend_terraform|Testing phase|
-|kitsune|3001|terraform-1|atr-backend_terraform|Testing phase|
-|kitsune|3002|terraform-2|atr-backend_terraform|Testing phase|
+|VMID|Name|Role|Note|
+|:---|:---|:---|:---|
+|200|iriguchi|nginx|DO NOT SHUT DOWN THIS VM|
+|201|morata|linux-mirror|DO NOT SHUT DOWN THIS VM|
+|202|sesshoku|subnet-router|DO NOT SHUT DOWN THIS VM|
+|203|teikyo|minecraft-java-server|Private usage|
+|204|shiten|subnet-router,exit-node|DO NOT SHUT DOWN THIS VM|
+|205|kanshi|to-be-defined|To be defined|
+|206|fukusha|syncthing|Private usage|
+|1000|hitori|kubernetes-control-plane|Testing phase|
+|1001|futari|kubernetes-worker|Testing phase|
+|1002|hikari|kubernetes-worker|Testing phase|
+|2000|tsubaki|atr-backend|Production|
+|2001|ajisai|atr-backend|Production|
+|2002|suisen|atr-backend|Production|
+|2003|nadeshiko|atr-backend|Production|
+|2004|sumire|atr-backend|Production|
+|2005|tsutsuji|atr-backend|Production|
+|2006|nanohana|atr-backend|Staging|
+|2007|kinmokusei|atr-backend|Staging|
+|3000|terraform-0|atr-backend_terraform|Testing phase|
+|3001|terraform-1|atr-backend_terraform|Testing phase|
+|3002|terraform-2|atr-backend_terraform|Testing phase|
 
 ## Templates
 
@@ -49,11 +51,12 @@ Template Format:
 
 `distro-bios-type`
 
->> Use `acheron-pve_101_debian-uefi` for standard default
+>> Use `washi_103_debian-uefi` for standard default
 
-- acheron-pve_100_debian-seabios (***deprecated, do not use this in production environment***)
-- acheron-pve_101_debian-uefi
-- acheron-pve_102_arch-linux-uefi
+- washi_100_debian-seabios (***deprecated, do not use this in production environment***)
+- washi_101_debian-uefi (***deprecated, do not use this in production environment***)
+- washi_102_arch-linux-uefi
+- washi_103_debian-uefi
 
 ### Template Creation Guide
 
